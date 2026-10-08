@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <option name="separateProdTestSources" value="true" />
+    <profile name="sbt 1" modules="sistema-experto-amenazas,sistema-experto-amenazas_8695,sistema-experto-amenazas_8695.main,sistema-experto-amenazas_8695.test" />
+    <profile name="sbt 2" modules="sistema-experto-amenazas.main,sistema-experto-amenazas.test">
+      <option name="deprecationWarnings" value="true" />
+      <option name="uncheckedWarnings" value="true" />
+      <option name="featureWarnings" value="true" />
+    </profile>
+  </component>
+</project>

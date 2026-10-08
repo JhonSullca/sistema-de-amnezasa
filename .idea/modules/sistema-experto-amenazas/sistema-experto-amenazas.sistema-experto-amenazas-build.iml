@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="DisplayModuleName">
+    <option name="name" value="sistema-experto-amenazas-build" />
+  </component>
+  <component name="SbtModule">
+    <option name="buildForURI" value="file:///C:/Users/jhons/OneDrive%20-%20Universidad%20Tecnologica%20del%20Peru/CICLO7/Lenguajes%20de%20Programación/sistema-experto-amenazas/" />
+    <option name="imports" value="SUB:DOLLAR696f2a7926428adf3965.`root`, _root_.sbt.Keys._, _root_.sbt.ScriptedPlugin.autoImport._, _root_.sbt.plugins.JUnitXmlReportPlugin.autoImport._, _root_.sbt.plugins.MiniDependencyTreePlugin.autoImport._, _root_.org.jetbrains.sbt.GenerateAllManagedSourcesPlugin.autoImport._, _root_.org.jetbrains.sbt.SbtSourcesPlugin.autoImport._, _root_.sbt._, _root_.sbt.nio.Keys._, _root_.sbt.plugins.IvyPlugin, _root_.sbt.plugins.JvmPlugin, _root_.sbt.plugins.CorePlugin, _root_.sbt.ScriptedPlugin, _root_.sbt.plugins.SbtPlugin, _root_.sbt.plugins.SemanticdbPlugin, _root_.sbt.plugins.JUnitXmlReportPlugin, _root_.sbt.plugins.Giter8TemplatePlugin, _root_.sbt.plugins.MiniDependencyTreePlugin, _root_.org.jetbrains.sbt.GenerateAllManagedSourcesPlugin, _root_.org.jetbrains.sbt.SbtSourcesPlugin, _root_.org.jetbrains.sbt.StructurePlugin, _root_.scala.xml.{TopScope=&gt;SUB:DOLLARscope}" />
+    <option name="resolvers" value="https://repo1.maven.org/maven2/|maven|public, C:\Users\jhons\.ivy2\cache|ivy|true|Local cache" />
+  </component>
+</module>

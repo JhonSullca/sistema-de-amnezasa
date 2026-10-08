@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module version="4">
+  <component name="DisplayModuleName">
+    <option name="name" value="sistema-experto-amenazas_8695-build" />
+  </component>
+  <component name="SbtModule">
+    <option name="buildForURI" value="file:///C:/Users/jhons/OneDrive%20-%20Universidad%20Tecnologica%20del%20Peru/CICLO7/Lenguajes%20de%20Programación/sistema-experto-amenazas/" />
+    <option name="resolvers" value="C:\Users\jhons\.ivy2\cache|ivy|true|Local cache" />
+  </component>
+</module>

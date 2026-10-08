@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentinel Expert | Scala + Prolog</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<header class="topbar">
+    <div class="brand">
+        <span class="brand-mark">S</span>
+        <div>
+            <h1>Sentinel Expert</h1>
+            <p>Sistema experto de detección de amenazas</p>
+        </div>
+    </div>
+    <span class="tech-badge">SCALA + PROLOG</span>
+</header>
+
+<main class="container">
+    <section class="hero">
+        <div>
+            <span class="eyebrow">MONITOREO INTELIGENTE</span>
+            <h2>Analiza eventos y detecta posibles amenazas</h2>
+            <p>Scala gestiona la interfaz, el análisis y los reportes; Prolog aplica hechos, reglas e inferencia lógica.</p>
+        </div>
+        <div class="status-card">
+            <span class="status-dot"></span>
+            <div>
+                <strong>Sistema en línea</strong>
+                <small>Motor Prolog conectado bajo demanda</small>
+            </div>
+        </div>
+    </section>
+
+    <section class="grid-layout">
+        <div class="panel form-panel">
+            <div class="panel-title">
+                <div>
+                    <span class="section-label">01</span>
+                    <h3>Nuevo evento de seguridad</h3>
+                </div>
+                <button class="ghost-btn" id="demoBtn" type="button">Cargar ejemplo</button>
+            </div>
+
+            <form id="analysisForm">
+                <div class="field-grid">
+                    <label>Usuario
+                        <input id="usuario" name="usuario" value="admin" required>
+                    </label>
+                    <label>Dirección IP
+                        <input id="ip" name="ip" value="185.44.20.10" required>
+                    </label>
+                    <label>Tipo de evento
+                        <select id="tipoEvento" name="tipoEvento">
+                            <option value="login">Inicio de sesión</option>
+                            <option value="red">Conexión de red</option>
+                            <option value="alerta">Alerta de seguridad</option>
+                            <option value="acceso">Acceso a recurso</option>
+                        </select>
+                    </label>
+                    <label>Intentos fallidos
+                        <input id="intentosFallidos" name="intentosFallidos" type="number" min="0" max="100" value="8">
+                    </label>
+                </div>
+
+                <label>Descripción
+                    <textarea id="descripcion" name="descripcion" rows="3">Múltiples intentos de acceso desde una IP no habitual.</textarea>
+                </label>
+
+                <div class="checks">
+                    <label class="check-card">
+                        <input type="checkbox" id="conexionSospechosa" name="conexionSospechosa" value="true" checked>
+                        <span><strong>Conexión sospechosa</strong><small>Origen o conexión marcada como riesgosa.</small></span>
+                    </label>
+                    <label class="check-card">
+                        <input type="checkbox" id="alertaActiva" name="alertaActiva" value="true" checked>
+                        <span><strong>Alerta activa</strong><small>Existe una alerta asociada al evento.</small></span>
+                    </label>
+                    <label class="check-card">
+                        <input type="checkbox" id="comportamientoExtrano" name="comportamientoExtrano" value="true" checked>
+                        <span><strong>Comportamiento extraño</strong><small>Actividad fuera del patrón esperado.</small></span>
+                    </label>
+                </div>
+
+                <button class="primary-btn" id="analyzeBtn" type="submit">Analizar con Prolog</button>
+            </form>
+        </div>
+
+        <div class="panel result-panel" id="resultPanel">
+            <div class="panel-title">
+                <div>
+                    <span class="section-label">02</span>
+                    <h3>Resultado de la inferencia</h3>
+                </div>
+                <span class="level-badge neutral" id="levelBadge">SIN ANÁLISIS</span>
+            </div>
+
+            <div class="result-empty" id="emptyResult">
+                <div class="empty-icon">⌁</div>
+                <h4>Esperando un evento</h4>
+                <p>Completa el formulario y ejecuta el motor experto.</p>
+            </div>
+
+            <div class="result-content hidden" id="resultContent">
+                <div class="score-card">
+                    <div>
+                        <small>PUNTUACIÓN DE RIESGO</small>
+                        <strong id="score">0</strong><span>/11</span>
+                    </div>
+                    <div class="score-meter"><span id="scoreBar"></span></div>
+                </div>
+                <div class="threat-main">
+                    <small>AMENAZA IDENTIFICADA</small>
+                    <h4 id="threatName">-</h4>
+                    <p id="recommendation">-</p>
+                </div>
+                <div>
+                    <small class="subheading">Indicadores encontrados</small>
+                    <ul id="reasonsList" class="reason-list"></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-grid">
+        <div class="stat-card"><span>Total analizados</span><strong id="total">0</strong></div>
+        <div class="stat-card danger"><span>Críticos</span><strong id="criticas">0</strong></div>
+        <div class="stat-card warning"><span>Altos</span><strong id="altas">0</strong></div>
+        <div class="stat-card neutral-stat"><span>Medios</span><strong id="medias">0</strong></div>
+        <div class="stat-card safe"><span>Bajos</span><strong id="bajas">0</strong></div>
+    </section>
+
+    <section class="panel history-panel">
+        <div class="panel-title">
+            <div>
+                <span class="section-label">03</span>
+                <h3>Historial de análisis</h3>
+            </div>
+            <button class="ghost-btn danger-btn" id="resetBtn" type="button">Limpiar historial</button>
+        </div>
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr><th>Fecha</th><th>Usuario</th><th>IP</th><th>Tipo</th><th>Amenaza</th><th>Nivel</th></tr>
+                </thead>
+                <tbody id="historyBody">
+                    <tr><td colspan="6" class="table-empty">Aún no hay análisis.</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="architecture">
+        <div class="arch-card"><span>1</span><strong>Formulario web</strong><small>HTML + CSS + JS</small></div>
+        <div class="arrow">→</div>
+        <div class="arch-card"><span>2</span><strong>Scala</strong><small>Modelo + servicios + API</small></div>
+        <div class="arrow">→</div>
+        <div class="arch-card"><span>3</span><strong>Prolog</strong><small>Hechos + reglas + inferencia</small></div>
+        <div class="arrow">→</div>
+        <div class="arch-card"><span>4</span><strong>Reporte</strong><small>Resultado y estadísticas</small></div>
+    </section>
+</main>
+
+<footer>Avance 2 · Lenguajes de Programación · Sistema experto de detección de amenazas</footer>
+<script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:/Users/jhons/AppData/Local/Temp/idea14165255580390865961.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:/Users/jhons/AppData/Local/Temp/idea14165255580390865961.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.11.7 (Oracle Corporation Java 25.0.2)
+[debug]       Load.loadUnit: plugins took 40.4401ms
+[debug]       Load.loadUnit: defsScala took 0.128ms
+[debug] [Loading] Scanning directory C:\Users\jhons\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\jhons\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 8.2159 ms
+[debug]           Load.resolveProject(global-plugins) took 20.1154ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\jhons\.sbt\1.0\plugins, plugins: List(<none>))) took 37.6306ms
+[debug] [Loading] Done in C:\Users\jhons\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 47.5118ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.1989ms
+[debug]     Load.loadUnit(file:/C:/Users/jhons/.sbt/1.0/plugins/, ...) took 92.8962ms
+[debug]   Load.apply: load took 179.572ms
+[debug]   Load.apply: resolveProjects took 3.4749ms
+[debug]   Load.apply: finalTransforms took 29.1132ms
+[debug]   Load.apply: config.delegates took 3.4589ms
+[debug]   Load.apply: Def.make(settings)... took 164.2916ms
+[debug]   Load.apply: structureIndex took 55.8952ms
+[debug]   Load.apply: mkStreams took 0.7472ms
+[info] loading global plugins from C:\Users\jhons\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 1882.9475ms
+[debug]           Load.loadUnit: plugins took 11.2199ms
+[debug]           Load.loadUnit: defsScala took 0.0014ms
+[debug] [Loading] Scanning directory C:\Users\jhons\OneDrive - Universidad Tecnologica del Peru\CICLO7\Lenguajes de Programación\sistema-experto-amenazas\project
+[debug]             Load.loadUnit: mkEval took 3.3406ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\jhons\OneDrive - Universidad Tecnologica del Peru\CICLO7\Lenguajes de Programación\sistema-experto-amenazas\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 1.1401 ms
+[info] loading settings for project sistema-experto-amenazas-build from idea14165255580390865961.sbt...
+[debug]               Load.resolveProject(sistema-experto-amenazas-build) took 1.6903ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id sistema-experto-amenazas-build, base: C:\Users\jhons\OneDrive - Universidad Tecnologica del Peru\CICLO7\Lenguajes de Programación\sistema-experto-amenazas\project, plugins: List(<none>))) took 3.2032ms
+[debug] [Loading] Done in C:\Users\jhons\OneDrive - Universidad Tecnologica del Peru\CICLO7\Lenguajes de Programación\sistema-experto-amenazas\project, returning: (sistema-experto-amenazas-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 1070.3554ms
+[debug]           Load.loadUnit: cleanEvalClasses took 3.8252ms
+[debug]         Load.loadUnit(file:/C:/Users/jhons/OneDrive%20-%20Universidad%20Tecnologica%20del%20Peru/CICLO7/Lenguajes%20de%20Programación/sistema-experto-amenazas/project/, ...) took 1085.9968ms
+[debug]       Load.apply: load took 1087.2364ms
+[debug]       Load.apply: resolveProjects took 0.0879ms
+[debug]       Load.apply: finalTransforms took 26.5768ms
+[debug]       Load.apply: config.delegates took 0.3722ms
+[debug]       Load.apply: Def.make(settings)... took 34.1876ms
+[debug]       Load.apply: structureIndex took 16.8027ms
+[debug]       Load.apply: mkStreams took 0.002ms
+[info] loading project definition from C:\Users\jhons\OneDrive - Universidad Tecnologica del Peru\CICLO7\Lenguajes de Programación\sistema-experto-amenazas\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 1379.6141ms
+[debug]     Load.loadUnit: defsScala took 0.0022ms
+[debug] [Loading] Scanning directory C:\Users\jhons\OneDrive - Universidad Tecnologica del Peru\CICLO7\Lenguajes de Programación\sistema-experto-amenazas
+[debug]       Load.loadUnit: mkEval took 0.1916ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.GenerateAllManagedSourcesPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.SbtSourcesPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.GenerateAllManagedSourcesPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.SbtSourcesPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,org.jetbrains.sbt.GenerateAllManagedSourcesPlugin,sbt.plugins.SemanticdbPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,org.jetbrains.sbt.SbtSourcesPlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 1.7863 ms
+[info] loading settings for project root from build.sbt...
+[debug]         Load.resolveProject(root) took 15.976ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: C:\Users\jhons\OneDrive - Universidad Tecnologica del Peru\CICLO7\Lenguajes de Programación\sistema-experto-amenazas, plugins: List(<none>))) took 18.4511ms
+[debug] [Loading] Done in C:\Users\jhons\OneDrive - Universidad Tecnologica del Peru\CICLO7\Lenguajes de Programación\sistema-experto-amenazas, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 671.7024ms
+[debug]     Load.loadUnit: cleanEvalClasses took 19.4283ms
+[debug]   Load.loadUnit(file:/C:/Users/jhons/OneDrive%20-%20Universidad%20Tecnologica%20del%20Peru/CICLO7/Lenguajes%20de%20Programación/sistema-experto-amenazas/, ...) took 2071.4129ms
+[debug] Load.apply: load took 2075.956ms
+[debug] Load.apply: resolveProjects took 0.1051ms
+[debug] Load.apply: finalTransforms took 13.108ms
+[debug] Load.apply: config.delegates took 0.2238ms
+[debug] Load.apply: Def.make(settings)... took 26.1896ms
+[debug] Load.apply: structureIndex took 14.6739ms
+[debug] Load.apply: mkStreams took 0.0024ms
+[info] set current project to sistema-experto-amenazas (in build file:/C:/Users/jhons/OneDrive%20-%20Universidad%20Tecnologica%20del%20Peru/CICLO7/Lenguajes%20de%20Programación/sistema-experto-amenazas/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(idea-shell, None, None)
